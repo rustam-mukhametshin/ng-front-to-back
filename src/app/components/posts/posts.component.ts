@@ -24,4 +24,7 @@ export class PostsComponent implements OnInit {
     });
   }
 
+  editPost(post: Post) {
+    this.currentPost = post;
+  }
 }
