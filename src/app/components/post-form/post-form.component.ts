@@ -8,6 +8,7 @@ import {Post} from '../../models/Post';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
+  @Input() currentPost: Post;
 
   constructor(private postService: PostService) {
   }
