@@ -9,6 +9,7 @@ import {Post} from '../../models/Post';
 })
 export class PostFormComponent implements OnInit {
   @Input() currentPost: Post;
+  @Input() isEdit: boolean;
 
   constructor(private postService: PostService) {
   }

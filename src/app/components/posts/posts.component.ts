@@ -14,6 +14,7 @@ export class PostsComponent implements OnInit {
     title: '',
     body: ''
   };
+  isEdit = false;
 
   constructor(private postService: PostService) {
   }

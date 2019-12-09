@@ -9,6 +9,7 @@
       <label>Body</label>
       <input [(ngModel)]="currentPost.body" type="text" class="form-control" name="body" #body>
     </div>
-    <button (click)="addPost(title.value, body.value)" class="btn btn-dark btn-block">Add Post</button>
+    <button *ngIf="!isEdit" (click)="addPost(title.value, body.value)" class="btn btn-dark btn-block">Add Post</button>
+    <button *ngIf="isEdit" (click)="updatePost()" class="btn btn-warning btn-block">Update Post</button>
   </form>
 </div>
