@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {User} from '../../models/User';
 
 @Component({
@@ -18,12 +18,7 @@ export class UserComponent implements OnInit{
     this.user = {
       firstName: 'John',
       lastName: 'Doe',
-      age: 30,
-      address: {
-        street: '50 Main St',
-        city: 'Boston',
-        state: 'MA'
-      }
+      email: '',
     };
   }
 }
